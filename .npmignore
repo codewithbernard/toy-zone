@@ -5,3 +5,4 @@ src
 stories
 yarn.lock
 LICENSE
+storybook-static

@@ -15,7 +15,8 @@
     "@storybook/addons": "^5.0.11",
     "@storybook/react": "^5.0.11",
     "babel-loader": "^8.0.5",
-    "babel-preset-minify": "^0.5.0"
+    "babel-preset-minify": "^0.5.0",
+    "gh-pages": "^2.0.1"
   },
   "peerDependencies": {
     "react": "^16.8.6",
@@ -23,7 +24,8 @@
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "build": "build-storybook",
+    "deploy": "gh-pages -d storybook-static",
     "prepublishOnly": "babel src -d dist --copy-files"
   }
 }
