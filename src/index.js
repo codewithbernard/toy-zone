@@ -1,3 +1,7 @@
-import Square from "./components/Square";
+import React from "react";
 
-export default Square;
+const Text = () => {
+  return <p>Hello World!</p>;
+};
+
+export default Text;

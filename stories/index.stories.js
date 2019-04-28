@@ -2,6 +2,6 @@ import React from "react";
 
 import { storiesOf } from "@storybook/react";
 
-import Square from "../src/components/Square";
+import Text from "../src";
 
-storiesOf("Square", module).add("Simple", () => <Square />);
+storiesOf("Text", module).add("Hello World!", () => <Text />);
