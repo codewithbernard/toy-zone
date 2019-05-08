@@ -1,7 +1,9 @@
 import React from "react";
 
 import { storiesOf } from "@storybook/react";
+import { action } from "@storybook/addon-actions";
+import ToyZone from "../src";
 
-import Text from "../src";
-
-storiesOf("Text", module).add("Hello World!", () => <Text />);
+storiesOf("ToyZone", module)
+  .add("Basic", () => <ToyZone onFilesAdded={action("Files uploaded")} />)
+  .add("Loading", () => <ToyZone loading />);
