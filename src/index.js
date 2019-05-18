@@ -69,21 +69,21 @@ class ToyZone extends Component {
   /**
    * Prevent default event
    */
-  stopEvent = event => {
+  stopEvent(event) {
     event.preventDefault();
     event.stopPropagation();
-  };
+  }
 
   /**
    * Converts FileList into Array
    */
-  fileListToArray = list => {
+  fileListToArray(list) {
     const result = [];
     for (let i = 0; i < list.length; i++) {
       result.push(list.item(i));
     }
     return result;
-  };
+  }
 
   /**
    * Opens file system dialog
